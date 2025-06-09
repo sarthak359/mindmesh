@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Spline from "@splinetool/react-spline";
 
+import { SignedIn, UserButton } from "@clerk/nextjs";
 const Navbar = () => {
   return (
     <div className="container">
@@ -34,14 +35,7 @@ const Navbar = () => {
             Contact
           </Link>
         </nav>
-        <Link
-          href="/Artificial"
-          data-aos="fade-down"
-          data-aos-duration="1500"
-          className="button-signin"
-        >
-          Lets go
-        </Link>
+        <UserButton showName />
       </header>
       <main>
         {" "}
