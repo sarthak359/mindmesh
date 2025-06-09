@@ -35,7 +35,9 @@ const Navbar = () => {
             Contact
           </Link>
         </nav>
-        <UserButton showName />
+        <div data-aos="fade-down" data-aos-duration="2500">
+          <UserButton showName />
+        </div>
       </header>
       <main>
         {" "}

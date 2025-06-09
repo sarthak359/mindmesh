@@ -21,9 +21,11 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <ClerkProvider>
-      <div className="middle">
+      <div className="middle" data-aos="fade-down" data-aos-duration="1500">
         <SignedOut>
-          <SignIn routing="hash" />
+          <div style={{ marginTop: "100px" }}>
+            <SignIn routing="hash" />
+          </div>
         </SignedOut>
       </div>
       <SignedIn>
