@@ -12,6 +12,8 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
+import { Analytics } from "@vercel/analytics/next";
+
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
@@ -30,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <SignedIn>
         <Component {...pageProps} />
+        <Analytics />
       </SignedIn>
     </ClerkProvider>
   );
