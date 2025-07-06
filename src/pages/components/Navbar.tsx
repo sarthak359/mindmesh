@@ -79,7 +79,6 @@ const Navbar = () => {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            data-aos-duration="3000"
             className="buttons"
           >
             <Link className="btn-getstarted" href="#">
@@ -90,17 +89,16 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        <Spline
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="3000"
+          className="robot-3d"
+          scene="https://prod.spline.design/Rze2Dq-zpXK3UxzV/scene.splinecode"
+        />
       </main>
-
-      <Spline
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-        data-aos-duration="3000"
-        className="robot-3d"
-        scene="https://prod.spline.design/mYC-22VdNhX2scR9/scene.splinecode"
-      />
     </div>
   );
 };
