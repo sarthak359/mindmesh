@@ -36,7 +36,15 @@ const Navbar = () => {
           </Link>
         </nav>
         <div data-aos="fade-down" data-aos-duration="2500">
-          <UserButton showName />
+          <UserButton
+            showName
+            appearance={{
+              variables: {
+                colorText: "white", // Sets text color globally
+                fontSize: "13px",
+              },
+            }}
+          />
         </div>
       </header>
       <main>
