@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: RGB(0, 0, 0);
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: RGB(0, 0, 0);
+    --foreground: RGB(0, 0, 0);
   }
 }
 
@@ -45,10 +45,10 @@ body {
   width: 30rem;
   position: absolute;
   top: 20%;
-  right: 0;
+  left: 0;
   box-shadow: 0 0 700px 15px white;
-  rotate: -30deg;
-  z-index: -1;
+  rotate:   30deg;
+  z-index: 101;
 }
 .container{
   width: 100%;
@@ -199,9 +199,9 @@ main{
 }
 .robot-3d{
   position: absolute;
-  top: 0;
-  right: -20%;
-  z-index: -1;
+  top: 100px;
+  right: -25%;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {
